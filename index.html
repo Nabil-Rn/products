@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="dolphinlogo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="header">Product Recommendations</h1>
+            <p class="description">Discover my top picks and wishlist items.</p>
+        </header>
+        <div class="buttons">
+            <button id="recommendationsBtn" onclick="loadData('recommendations.json', 'Recommendations')">Recommendations</button>
+            <button id="wishlistBtn" onclick="loadData('wishlist.json', 'Wishlist')">Wishlist</button>
+        </div>
+        <div id="product-list"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Product Showcase | <a href="https://.com/" target="_blank"> </a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
